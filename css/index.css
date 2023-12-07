@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/oxygen');
+
+:root {
+    --primary-100:#8B5D33;
+    --primary-200:#be8a5e;
+    --primary-300:#ffedbc;
+    --accent-100:#BFBFBF;
+    --accent-200:#616161;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#E5E5E5;
+    --bg-200:#dbdbdb;
+    --bg-300:#b3b3b3;
+}
+
+h1 {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 0 !important;
+}
+
+h3 {
+    font-family: 'Oxygen';
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-100);
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main {
+    margin-bottom: 50px;
+}
