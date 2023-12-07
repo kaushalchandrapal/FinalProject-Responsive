@@ -1,0 +1,45 @@
+@import url('index.css');
+
+.header {
+    background: var(--primary-100) !important;
+    color: #f1f1f1 !important;
+}
+
+.logo {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.navbar {
+    padding: 0 20px !important;
+    background-color: var(--bg-100); 
+    color: var(--text-200);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 20px !important;
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: 20px !important;
+}
+
+.nav-links li {
+    display: inline;
+    font-family: 'oxygen';
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texr-200);
+}
+
+@media screen and (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+}
