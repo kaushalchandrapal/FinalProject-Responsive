@@ -1,36 +1,93 @@
 @import url('https://fonts.cdnfonts.com/css/oxygen');
 
 :root {
-    --primary-100:#8B5D33;
-    --primary-200:#be8a5e;
-    --primary-300:#ffedbc;
-    --accent-100:#BFBFBF;
-    --accent-200:#616161;
-    --text-100:#333333;
-    --text-200:#5c5c5c;
-    --bg-100:#E5E5E5;
-    --bg-200:#dbdbdb;
-    --bg-300:#b3b3b3;
+    --primary-100:#FFFFFF;
+    --primary-200:#e0e0e0;
+    --primary-300:#9b9b9b;
+    --primary-400:rgb(249, 250, 251);
+    --green-accent: rgb(32, 191, 107);
+    --accent-100:#FF6F00;
+    --accent-200:#8d0000;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#1D216B;
+    --bg-200:#32307d;
+    --bg-300:#50499a;
+}
+
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+.banner {
+    background-color: var(--bg-100);
+    padding: 0;
+}
+
+.banner-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    text-align:center;
+}
+
+.banner-text {
+    width: 80% !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Oxygen';
+    font-style: normal;
 }
 
 h1 {
-    font-family: 'Oxygen';
-    font-style: normal;
     font-weight: 700;
     font-size: 34px;
     margin: 0 !important;
 }
 
+.green-accent {
+    color: var(--green-accent);
+}
+.bg-text {
+    color: var(--primary-400);
+}
+
 h3 {
-    font-family: 'Oxygen';
-    font-style: normal;
     line-height: 16px;
     font-weight: 400;
     font-size: 16px;
 }
 
+h4 {
+    line-height: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0 !important;
+}
+
 body {
-    background-color: var(--bg-100);
+    background-color: var(--primary-400);
     margin: 0;
     min-height: 100vh;
     height: 100%;
@@ -46,4 +103,47 @@ body {
 
 main {
     margin-bottom: 50px;
+}
+
+.content {
+    margin-top: -10px;
+    width: 100%;
+    background-color: var(--primary-400);
+}
+
+.image-main-mobile {
+    padding-bottom: 30px !important;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1400px) {
+    .image-main-mobile {
+        display: none;
+    }
+    .banner-text {
+        margin-top: 30px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .banner-text {
+        width: 500px !important;
+    }
+    .image-main-mobile {
+        display: none;
+    }
+
+    .banner {
+        padding-top: 200px !important;
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+        padding-bottom: 80px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .image-main {
+        display: none;
+    }
+
+    
 }
