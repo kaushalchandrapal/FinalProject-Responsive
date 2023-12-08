@@ -37,7 +37,11 @@
 
 .nav-links a {
     text-decoration: none;
-    color: var(--texr-200);
+    color: var(--text-200);
+}
+
+.nav-links a:hover {
+    color: var(--green-accent);
 }
 
 @media screen and (max-width: 700px) {
