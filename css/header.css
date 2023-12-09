@@ -43,7 +43,34 @@
 .nav-links a:hover {
     color: var(--green-accent);
 }
+.nav-linkss {
+    list-style: none;
+    margin-right: 20px !important;
+    display: flex;
+    justify-content: center;
+}
 
+.nav-linkss li {
+    display: inline;
+    font-family: 'oxygen';
+    margin-right: 20px;
+}
+
+.nav-linkss a {
+    text-decoration: none;
+    color: var(--text-200);
+}
+
+.nav-linkss a:hover {
+    color: var(--green-accent);
+}
+
+@media screen and (min-width: 700px) {
+    
+    .nav-linkss {
+        display: none;
+    }
+}
 @media screen and (max-width: 700px) {
     .nav-links {
         display: none;
