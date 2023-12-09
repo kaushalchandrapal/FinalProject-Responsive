@@ -1,24 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#contact{
-    padding-top: 3%;
-
-}
 
 
-header {
-    background-color: #be8a5e;
-    color: #333333;
-    padding: 10px;
-    
+.header {
+    background: var(--bg-100) !important;
     color: #f1f1f1 !important;
 }
-.logo{
-    text-align: left;
+
+.logo {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    width: 100px;
 }
 
 .navbar {
@@ -26,6 +16,14 @@ header {
     background-color: var(--bg-100); 
     color: var(--text-200);
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 20px !important;
+}
+
 .nav-links {
     list-style: none;
     margin-right: 20px !important;
@@ -34,12 +32,15 @@ header {
     display: inline;
     font-family: 'oxygen';
     margin-right: 20px;
-
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--texr-200);
+    color: var(--text-200);
+}
+
+.nav-links a:hover {
+    color: var(--green-accent);
 }
 
 @media screen and (max-width: 700px) {
@@ -49,15 +50,18 @@ header {
 }
 
 
+
 footer {
-    background-color: #be8a5e;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    /* position: fixed; */
+    font-family: 'oxyen';
+    background-color: var(--bg-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-100);
+    padding: 10px 20px;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--bg-100);
 }
 nav {
     text-align: right;
@@ -120,19 +124,36 @@ nav a:hover {
   button:hover {
     background-color: #0056b3;
   }
-  .image-main{
-    padding: 10px;
-    height: 25rem;
-    width: 99%;
-
+  
+  #contact-form{
+    color: #fff
   }
-  .banner {
-    position: relative;
-    background-image: url('/images/splashright_bg.jpeg');
-    background-size: cover; /* Adjust as needed (cover/contain) */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat;
-    color: white; /* Text color */
+  h1, h2, h4, p {
+    font-family: 'Oxygen';
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 34px;
+    margin: 0 !important;
+}
+#contact{
+    color: black;
+}
+#paragraph{
+    color: #fff;
+
+}
+.banner-text{
     height: 25rem;
-    width: 100%;
+}
+#contact-info{
+       font-weight: 100;
+       position: static;
+       overflow: auto;   
+      
+}
+#asd{
+    margin-bottom: 70px;
 }
